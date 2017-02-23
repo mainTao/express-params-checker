@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/chao/.nvm/versions/node/v4.6.0/bin/node',
+1 verbose cli   '/Users/chao/.nvm/versions/node/v4.6.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/chao/GitHub/express-params-checker',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/chao/.npm/express-params-checker/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/chao/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/chao/.npm/express-params-checker/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/chao/GitHub/express-params-checker' ]
+11 verbose tarball /Users/chao/.npm/express-params-checker/1.0.0/package.tgz
+12 verbose folder /Users/chao/GitHub/express-params-checker
+13 info prepublish express-params-checker@1.0.0
+14 verbose addLocalTarball adding from inside cache /Users/chao/.npm/express-params-checker/1.0.0/package.tgz
+15 verbose correctMkdir /Users/chao/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd express-params-checker@1.0.0
+17 verbose afterAdd /Users/chao/.npm/express-params-checker/1.0.0/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/chao/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/chao/.npm/express-params-checker/1.0.0/package/package.json written
+20 silly publish { name: 'express-params-checker',
+20 silly publish   version: '1.0.0',
+20 silly publish   description: '',
+20 silly publish   main: 'index.js',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   author: '',
+20 silly publish   license: 'ISC',
+20 silly publish   dependencies: { lodash: '^4.17.4' },
+20 silly publish   readme: 'ERROR: No README data found!',
+20 silly publish   _id: 'express-params-checker@1.0.0',
+20 silly publish   _shasum: 'e079348928f6987e00a765d05b888686b70add4f',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name express-params-checker
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npm.taobao.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'express-params-checker',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'express-params-checker',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npm.taobao.org/express-params-checker
+27 verbose publish registryBase https://registry.npm.taobao.org/
+28 silly publish uploading /Users/chao/.npm/express-params-checker/1.0.0/package.tgz
+29 verbose request uri https://registry.npm.taobao.org/express-params-checker
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 3:23:03 PM
+32 verbose request id 81c1c83f88a19103
+33 http request PUT https://registry.npm.taobao.org/express-params-checker
+34 http 403 https://registry.npm.taobao.org/express-params-checker
+35 verbose headers { date: 'Thu, 23 Feb 2017 07:23:04 GMT',
+35 verbose headers   'content-type': 'application/json; charset=utf-8',
+35 verbose headers   'content-length': '87',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-current-requests': '1',
+35 verbose headers   'x-readtime': '6' }
+36 verbose request invalidating /Users/chao/.npm/registry.npm.taobao.org/express-params-checker on PUT
+37 error publish Failed PUT 403
+38 verbose stack Error: no_perms Private mode enable, only admin can publish this module: express-params-checker
+38 verbose stack     at makeError (/Users/chao/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/Users/chao/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at Request._callback (/Users/chao/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/Users/chao/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (/Users/chao/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/Users/chao/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+39 verbose statusCode 403
+40 verbose pkgid express-params-checker
+41 verbose cwd /Users/chao/GitHub/express-params-checker
+42 error Darwin 16.4.0
+43 error argv "/Users/chao/.nvm/versions/node/v4.6.0/bin/node" "/Users/chao/.nvm/versions/node/v4.6.0/bin/npm" "publish"
+44 error node v4.6.0
+45 error npm  v2.15.9
+46 error code E403
+47 error no_perms Private mode enable, only admin can publish this module: express-params-checker
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
